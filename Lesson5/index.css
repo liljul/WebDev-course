@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+    margin: 0px;
+    min-height: 100vh;
+
+    grid-template: 100px 300px 150px / 100px 65fr 35fr;
+    grid-template-areas: 
+        "logo menu menu"
+        "news list nav"
+        "footer footer nav";
+}
+
+.logo, .menu, .news, .list, .nav, .footer {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.logo{
+    background: coral;
+    grid-area: logo;
+}
+
+.menu {
+    background: cornflowerblue;
+    grid-area: menu;
+}
+
+.news {
+    background: darkgreen;
+    grid-area: news;
+}
+
+.list {
+    background: darksalmon;
+    grid-area: list;
+}
+
+.nav {
+    background: darkslateblue;
+    grid-area: nav;
+}
+
+.footer {
+    background: firebrick;
+    grid-area: footer;
+}
